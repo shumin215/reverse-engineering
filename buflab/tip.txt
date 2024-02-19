@@ -1,0 +1,12 @@
+Buffer Lab Guide
+
+[1] Running gdb with text file input
+
+/* Generate raw byte text file from ascii text file */
+$ ./hex2raw < sample.txt > sample-raw.txt
+
+/* Run gdb and input the raw byte text file */
+$ gdb bufbomb
+
+(in gdb terminal)
+$ r -u jwhur < sample-raw.txt
